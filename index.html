@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .5rem 3rem;
+            background-color: #000;
+            color: white;
+        }
+
+        #cart{
+            background-color: white;
+            color: black;
+            padding: 2px;
+            position: relative;
+        }
+
+        #cart span{
+            background-color: red;
+            padding: 1px;
+            color: white;
+            height: 15px;
+            width: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 10px;
+            top: -10px;
+            right: -10px;
+            border-radius: 50%;
+        }
+
+        .single-product{
+            /* width: 200px; */
+            border: 1px solid;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        #products{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <span id="cart">cart <span id="cart-num"></span></span>
+    </header>
+
+    <section id="products"></section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
